@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#11100f">
+<title>Серғазы & Айнұр — Тойға шақыру</title>
+<style>
+:root{--gold:#d8b56d;--gold2:#f4dfaa;--ink:#11100f;--cream:#f7f0e2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#11100f;color:var(--cream);font-family:Georgia,'Times New Roman',serif}.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;overflow:hidden;background:radial-gradient(ellipse at 50% 20%,#3c3020 0%,#191613 42%,#0d0c0b 100%);position:relative}.page:before,.page:after{content:'✦';position:absolute;color:#caa45a;opacity:.22;font-size:150px;pointer-events:none}.page:before{top:2%;left:3%}.page:after{bottom:1%;right:4%;font-size:190px}.card{width:min(100%,650px);padding:clamp(28px,6vw,58px) clamp(20px,6vw,56px);border:1px solid #b99551;outline:1px solid #b9955166;outline-offset:7px;text-align:center;position:relative;background:linear-gradient(145deg,#171512ed,#211b13eF 55%,#12100d);box-shadow:0 20px 80px #0009}.ornament{color:var(--gold);font-size:22px;letter-spacing:9px;margin-bottom:22px}.eyebrow{font:12px/1.8 Arial,sans-serif;text-transform:uppercase;letter-spacing:4px;color:var(--gold2)}h1{font-size:clamp(42px,10vw,76px);font-weight:400;line-height:1.05;margin:20px 0 12px;color:var(--gold2)}.amp{font-size:.55em;color:var(--gold);font-style:italic}.subtitle{font-size:clamp(18px,4vw,23px);font-style:italic;color:#e7d4ac;margin:18px 0 28px}.divider{display:flex;align-items:center;gap:14px;justify-content:center;color:var(--gold);margin:25px 0}.divider:before,.divider:after{content:'';height:1px;width:75px;background:linear-gradient(90deg,transparent,var(--gold))}.divider:after{transform:rotate(180deg)}.message{font-size:17px;line-height:1.85;color:#e9dfcc;max-width:440px;margin:0 auto}.details{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:30px 0}.detail{border-top:1px solid #8e713e;border-bottom:1px solid #8e713e;padding:16px 6px}.label{font:10px Arial,sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}.value{font-size:20px;color:var(--gold2);margin-top:8px}.venue{font-size:27px;color:var(--gold2);margin:10px 0 5px}.city{font:13px Arial,sans-serif;letter-spacing:1px;color:#d2c3a7}.countdown{margin:25px 0 28px}.count-label{font:11px Arial,sans-serif;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:13px}.timer{display:flex;justify-content:center;gap:clamp(12px,4vw,26px)}.unit strong{display:block;font-size:27px;font-weight:400;color:var(--gold2)}.unit span{font:10px Arial,sans-serif;letter-spacing:1px;color:#b8a889}.buttons{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:25px}.btn{display:inline-block;border:1px solid var(--gold);padding:13px 18px;color:var(--gold2);text-decoration:none;background:#b58d4214;font:11px Arial,sans-serif;letter-spacing:1.4px;text-transform:uppercase;cursor:pointer;transition:.2s}.btn:hover{background:#c59e4b2b}.footer{font-size:15px;color:#d8c39b;font-style:italic;margin-top:26px}.tiny{font:10px Arial,sans-serif;color:#82765e;margin-top:25px;letter-spacing:.7px}.spark{color:var(--gold);font-size:18px}@media(max-width:420px){.details{gap:8px}.value{font-size:18px}.message{font-size:16px}.card{padding-left:18px;padding-right:18px}}
+</style>
+</head>
+<body>
+<main class="page"><section class="card" aria-label="Тойға шақыру">
+<div class="ornament">❖ ✧ ❖</div>
+<div class="eyebrow">Сіздерді қуанышымызға ортақ болуға шақырамыз</div>
+<h1>Серғазы<br><span class="amp">&amp;</span><br>Айнұр</h1>
+<div class="subtitle">Үйлену тойына шақыру</div>
+<div class="divider"><span class="spark">✦</span></div>
+<p class="message">Қадірлі ағайын-туыс, дос-жаран!<br>Өміріміздегі ең ерекше күнімізде ортамыздан табылып, қуанышымызды бірге бөліссеңіздер, біз үшін үлкен мәртебе.</p>
+<div class="details">
+<div class="detail"><div class="label">Күні</div><div class="value">22 қараша</div><div class="city">2026 жыл</div></div>
+<div class="detail"><div class="label">Басталуы</div><div class="value">16:00</div><div class="city">Жексенбі</div></div>
+</div>
+<div class="label">Той салтанаты өтетін орын</div>
+<div class="venue">Golden Moon</div>
+<div class="city">Қандыағаш қаласы</div>
+<div class="countdown"><div class="count-label">Қуанышты күнге дейін</div><div class="timer" id="timer"><div class="unit"><strong>--</strong><span>КҮН</span></div><div class="unit"><strong>--</strong><span>САҒАТ</span></div><div class="unit"><strong>--</strong><span>МИНУТ</span></div><div class="unit"><strong>--</strong><span>СЕКУНД</span></div></div></div>
+<div class="buttons"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Golden+Moon+Qandyagash+Kazakhstan">Картадан көру ↗</a><button class="btn" id="music">♫ Әуенді қосу</button></div>
+<div class="footer">Ізгі ниетпен, Серғазы мен Айнұр</div>
+<div class="tiny">ҚУАНЫШЫМЫЗҒА ОРТАҚ БОЛЫҢЫЗДАР</div>
+</section></main>
+<script>
+const target = new Date('2026-11-22T16:00:00+05:00').getTime();
+function tick(){let diff=target-Date.now();if(diff<0)diff=0;const vals=[Math.floor(diff/86400000),Math.floor(diff%86400000/3600000),Math.floor(diff%3600000/60000),Math.floor(diff%60000/1000)];document.querySelectorAll('#timer .unit strong').forEach((el,i)=>el.textContent=String(vals[i]).padStart(2,'0'));}
+tick();setInterval(tick,1000);
+let audioCtx=null,playing=false,timerId=null;const button=document.getElementById('music');
+button.addEventListener('click',()=>{if(playing){clearInterval(timerId);playing=false;button.textContent='♫ Әуенді қосу';if(audioCtx)audioCtx.suspend();return;}const AC=window.AudioContext||window.webkitAudioContext;if(!AC){button.textContent='Әуен бұл браузерде қолжетімсіз';return;}audioCtx=audioCtx||new AC();audioCtx.resume();playing=true;button.textContent='Ⅱ Әуенді тоқтату';const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46];let i=0;const play=()=>{if(!playing)return;const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=notes[i%notes.length];gain.gain.setValueAtTime(.0001,audioCtx.currentTime);gain.gain.exponentialRampToValueAtTime(.07,audioCtx.currentTime+.04);gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.42);osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+.45);i++;};play();timerId=setInterval(play,500);});
+</script>
+</body>
+</html>
